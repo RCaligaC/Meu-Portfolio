@@ -2,7 +2,7 @@
 
 /* mobile */
 
-.cabecalho__nav__container{
+.cabecalho__container{
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -13,7 +13,7 @@
 
   }
   
-  .cabecalho__nav__logo {
+  .cabecalho__logo {
     align-items: center;
   
     display: flex;
@@ -24,7 +24,7 @@
     font-weight: 700;
   }
   
-  .cabecalho__nav__logo::before {
+  .cabecalho__logo::before {
     align-items: center;
     content: url(../../images/logo-cabecalho.png);
   
@@ -35,22 +35,22 @@
     margin-right: 0.5rem;
   }
 
-  .cabecalho__nav__lista {
+  .cabecalho__lista {
     display: flex;
     justify-content: space-between;
   
     list-style: none;
   }
 
-  .cabecalho__nav__item {
+  .cabecalho__item {
     display: none;
   }
   
-  .cabecalho__nav__item--single {
+  .cabecalho__item__contato {
     display: flex;
   }
   
-  .cabecalho__nav__item__link {
+  .cabecalho__item__link {
     /* font-size: 0.875rem; */
     font-size: 1rem;
   }
@@ -60,20 +60,20 @@
   
   @media screen and (min-width:768px){
   
-    .cabecalho__nav__container{
+    .cabecalho__container{
       padding: 1rem 2rem;
     }
 
-    .cabecalho__nav__lista{
+    .cabecalho__lista{
         display: flex;
         justify-content: space-between;
     }
 
-    .cabecalho__nav__item--single {
+    .cabecalho__item__contato {
         font-weight: 700;
     }
     
-    .cabecalho__nav__item__link {
+    .cabecalho__item__link {
         font-size: 1rem;
     }
   
@@ -83,19 +83,19 @@
   
   @media screen and (min-width:1024px) {
   
-    .cabecalho__nav__container{
+    .cabecalho__container{
         margin: auto;
         max-width: 71rem;
         padding: 2rem 7rem;
   
     }
 
-    .cabecalho__nav__lista {
+    .cabecalho__lista {
         display: flex;
         flex-direction: row;
     }
 
-    .cabecalho__nav__item {
+    .cabecalho__item {
         display: flex;
     
         font-weight: 500;
@@ -109,13 +109,13 @@
   
   @media screen and (min-width:1440px) {
     
-    .cabecalho__nav__container{
+    .cabecalho__container{
         max-width: 80rem;
         padding: 2rem 9.5rem;
   
     }
 
-    .cabecalho__nav__item {
+    .cabecalho__item {
         margin-right: 2rem;
     }
   
