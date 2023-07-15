@@ -1,0 +1,106 @@
+/* CSS da seção skills da página */
+
+/* mobile */
+
+.skills__container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  
+    padding: 1rem;
+}
+
+.skills__titulo{
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 1.625rem                                                           
+  }
+
+.skills__boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills__box{
+    background-color: var(--branco);
+    box-shadow: var(--cor-de-sombra);
+  
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+  
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-top: 2rem;
+  
+    height: 7.375rem;
+    width: 47.5%;
+}
+
+.skills__tecnologia{
+    font-weight: 700;
+    font-size: 1rem;
+  
+    padding-top: 0.5rem;
+  }
+  
+  
+  /* tablete */
+  
+@media screen and (min-width:768px){
+
+    .skills__container{
+        padding: 2rem;
+    }
+
+    .skills__boxes{
+      width: 100%;
+  }
+
+    .skills__box{
+        height: 7.375rem;
+        width: 31.82%;
+    }
+    
+}
+  
+  /* laptop */
+  
+@media screen and (min-width:1024px) {
+    .skills__container{
+        margin: auto;
+        padding: 5rem 7rem;
+    
+        max-width: 71rem;
+    }
+    
+    .skills__box{
+        margin-left: 0;
+      }
+  
+}
+  
+  /* desktop */
+  
+@media screen and (min-width:1440px) {
+
+    .skills__container{
+        padding: 5.5rem 9.5rem;
+    
+        max-width: 80rem;
+    }
+
+    .skills__titulo{
+        font-size: 2rem;
+        line-height: 2.375rem;
+    }
+
+    .skills__box{
+        height: 7.375rem;
+        width: 11rem;
+        min-width: 15.3%;
+    }
+    
+}
