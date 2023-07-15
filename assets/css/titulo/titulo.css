@@ -9,7 +9,7 @@
 .titulo__titulo{
     font-size: 1.375rem;
     line-height: 1.6rem;
-    color: var(--azul80);
+    color: var(--erro);
     margin-top: 1rem;
 }
 
@@ -23,7 +23,7 @@
 
 .titulo__foto{
     border-radius: 50%;
-    
+    box-shadow: var(--cor-de-sombra);
     width: 6.125rem;
     height: 6.125rem;
 }
