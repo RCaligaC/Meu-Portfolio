@@ -1,0 +1,193 @@
+/* CSS da seção do formulário da página */
+
+/* mobile */
+
+.formulario__container{
+    height: 100%;
+    width: 100%;
+}
+
+.formulario__fieldset{
+    border: none;
+  
+    display: flex;
+    flex-direction: column;
+    
+    gap: 2rem;
+    
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+.input__campo{
+    border: none;
+    border-bottom: 1px solid var(--cinza30);
+    border-radius: 4px;
+  
+    box-sizing: border-box;
+  
+    cursor:text;
+  
+    color: var(--cinza100);
+    font-weight: 400;
+  
+    height: 3.625rem;
+  
+    padding-left: 0.75rem;
+}
+  
+/* ação do placeholder */
+  
+.input__campo::placeholder{
+    color: #00000000;
+  
+    visibility: hidden;
+}
+  
+/* ação ao clicar com mouse */
+  
+.input__campo:focus{
+    border-radius: 4px;
+    border-bottom: 2px solid var(--azul100);
+  
+    caret-color: var(--azul100);
+  
+    cursor:progress;
+  
+    outline: none;
+  
+    padding-top: 0.85rem;
+}
+  
+/* ação ao clicar no campo */
+  
+.input__campo:not(:placeholder-shown) + .input__label,
+.input__campo:focus + .input__label {
+    font-size: 0.75rem;
+  
+    top: 0.25rem;
+  
+    transition: all .25s;
+}
+  
+.input__campo:focus + .input__label {
+    color: var(--azul100);
+}
+  
+  
+/* se preenchimento válido */
+.input__campo:valid{
+    padding-top: 0.85rem;
+}
+  
+/* se preenchimento inválido */
+.input__campo:invalid {
+    color: var(--cinza50);
+    padding-top: 0.85rem;
+    /* border-bottom: 2px solid var(--azul100); */
+}
+
+/* mensagem de erro */
+.input__container--invalido { 
+    margin-bottom: 0.5rem; /* reduz margem inferior da div */
+}
+  
+/* exibe borda da div apenas se inválido */
+/* apenas no campo de input (desconsidera o span) */
+.input__container--invalido .input__campo {
+    /* border: 1px solid var(--cinza30); */
+    border-bottom: 3px solid var(--erro);
+    border-radius: 7px;
+}
+  
+/* define cor do seletor */
+.input__container--invalido .input__label{
+    color: var(--erro);
+}
+  
+/*  */
+.input__container--invalido .input__erro{
+    display: flex;
+    color: var(--erro);
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+  
+
+.input__container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+  
+    /* font-weight: 700; */
+}
+
+.input__erro{
+    display:none;
+  
+    color: var(--erro); /* altera cor do texto */
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+  
+.input__erro + .input__label{
+    color: var(--azul100);
+}
+
+.input__label{
+    font-weight: 400;
+    color: var(--cinza50);
+  
+    position: absolute;
+    left: 0.75rem;
+    top: 1.15rem;
+  
+    margin-bottom: 4px;
+    
+    transition: all .25s;
+}
+
+.input__mensagem{
+    height: 8.3125rem;
+  
+    padding-top: 1.15rem;
+}
+  
+  .input__mensagem:focus{
+    padding-top: 1.5rem;
+}
+  
+  
+.input__mensagem:valid{
+    padding-top: 1.5rem;
+}
+  
+.input__mensagem:invalid{
+    /* color: var(--cinza50); */
+    padding-top: 1.5rem;
+}
+
+/* tablete */
+  
+@media screen and (min-width:768px){
+  
+}
+  
+/* laptop */
+  
+@media screen and (min-width:1024px) {
+  
+}
+  
+/* desktop */
+  
+@media screen and (min-width:1440px) {
+
+    .input__container{
+        height: 100%;
+        max-height: 37.0625rem;
+    }
+  
+}

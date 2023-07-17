@@ -1,0 +1,128 @@
+/* CSS da seção contato da página */
+
+/* mobile */
+
+.contato__container--interno{
+    display: flex;
+    flex-direction: column;
+  
+    gap: 2rem;
+  
+    height: 100%;
+  }
+
+.contato__container--textos{
+    display: flex;
+    flex-direction: column;
+  
+    gap: 0.5rem;
+}
+
+.contato__container{
+    background-color: var(--azul10);
+    box-sizing: border-box;
+  
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+  
+    padding: 2rem;
+    width: 100vw;
+}
+
+.contato__imagem{
+    display: none;
+}
+
+.contato__texto{
+    font-weight: 500;
+    line-height: 1.1875rem;
+    
+}
+
+.contato__titulo{
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+}
+  
+/* tablete */
+  
+@media screen and (min-width:768px){
+  
+  
+  
+}
+  
+/* laptop */
+  
+@media screen and (min-width:1024px) {
+  
+    .contato__container--interno{
+      margin-top: 4rem;
+    }
+
+    .contato__container{
+        flex-direction: row;
+    }
+
+    .contato__container{
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        
+        margin: auto;
+        padding: 4rem 7rem;
+    
+        /* max-width: 71rem; */
+    }
+
+    .contato__imagem{
+        background-image: url(../../images/contact_image.png);
+        background-repeat: no-repeat;
+        background-color: rgb(92, 144, 168);
+    
+        box-sizing: border-box;
+    
+        display: flex;
+        margin-right: 1rem;
+        margin-top: 4rem;
+        height: 37.0625rem;
+        width: 29rem;
+    }
+  
+}
+  
+/* desktop */
+  
+@media screen and (min-width:1440px) {
+    .contato__container{
+        padding: 4rem 9.5rem;
+  
+        width: 100vw;
+  
+        /* max-width: 80rem; */
+    }
+
+    .contato__imagem{
+        height: 41.17vw;
+        height: 37.0625rem;
+        width: 32,22vw;
+    }
+  
+}
+
+/* telas maiores */
+
+@media screen and (min-width:1450px) {
+
+    .contato__container{
+      margin: auto;
+      padding: 4rem 9.5rem;
+
+      width: 100%;
+
+      /* max-width: 80rem; */
+  }
+
+}
