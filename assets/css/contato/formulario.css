@@ -120,14 +120,13 @@
     flex-direction: column;
     position: relative;
     box-sizing: border-box;
-  
-    /* font-weight: 700; */
+
 }
 
 .input__erro{
     display:none;
   
-    color: var(--erro); /* altera cor do texto */
+    color: var(--erro); 
     font-weight: 500;
     font-size: 0.875rem;
 }
@@ -165,7 +164,6 @@
 }
   
 .input__mensagem:invalid{
-    /* color: var(--cinza50); */
     padding-top: 1.5rem;
 }
 
